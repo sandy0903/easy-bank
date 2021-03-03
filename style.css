@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    
+    font-family: 'Public Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+nav ul li{
+    list-style-type: none;
+
+}
+li:hover a{
+    border-bottom:1px solid #000;
+}
+nav ul li a{
+    text-decoration: none;
+    color:hsl(233, 8%, 62%);
+    font-size:16px;
+    
+}
+.nav{
+    width:100%;
+    position:relative;
+    z-index:2;
+    background-color:#fff;
+}
+header{
+    width:80%;
+    margin:auto;
+    min-height:10vh;
+    background-color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;   
+    z-index:2;
+    
+
+}
+.logo{
+    position:absolute;
+    left:0;
+}
+nav{
+    margin-right:5rem;
+}
+nav ul li{
+    display:inline-flex;
+    padding-right:10px;
+}
+.btn{
+    position:absolute;
+    right:0;
+    padding:14px 25px;
+    border-radius:40px;
+    background:linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    border:none;
+}
+
+.btn a{
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+}
+.showcase{
+    width:100%;
+    height:85vh;
+    background-color:hsl(0, 0%, 98%);
+    overflow-x:hidden;
+    
+    
+    
+    
+    
+}
+.showcase::before{
+    content:"";
+    width:60%;
+    height:100%;
+    background-image:url("../easybank-landing-page-master/images/bg-intro-desktop.svg");
+    position:absolute;
+    top:0;
+    right:0;
+    background-repeat:no-repeat;
+    background-position: left center;
+    background-size:cover;
+    
+    
+}
+.showcase::after{
+    content:"";
+    width:50%;
+    height:100%;
+    background-image:url("../easybank-landing-page-master/images/image-mockups.png");
+    position:absolute;
+    
+    right:0;
+    margin:0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    
+}
+.infor{
+    width:30%;
+    position:absolute;
+    height:100%;
+    left:8.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+    
+}.infor .txt{
+    color:hsl(233, 8%, 62%);
+}
+.infor .title{
+    font-size:3rem;
+    margin:0 
+    
+    
+}
+.infor .btn{
+    left:0;
+    top:70%;
+    
+}
+
+.sections{
+    position:relative;
+    background-color:hsl(220, 16%, 96%);
+    overflow-x:hidden;
+    z-index:-1;
+}
+.text-top{
+    
+    width:80%;
+    margin:auto;
+    padding-top:5rem;
+
+}
+.text-top h3{
+    font-size:2rem;
+    font-weight:100;
+    margin-bottom:0;
+}
+.text-top p{
+    width:50%;
+    
+}
+.boxes{
+    width:80%;
+    margin:auto;
+    display:flex;
+    margin-top:4rem;
+}
+.boxes .section{
+    width:25%;
+    padding:0 15px 4rem 0rem;
+}
+.section p{
+    color:hsl(233, 26%, 24%);
+}
+.articles{
+    width:100%;
+    
+    
+}
+.articles .text-top{
+    margin-bottom:2rem;
+}
+.box{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-left:10%;
+    width:80%;
+    
+
+    
+    
+}
+.box .article {
+    width:25%;
+    margin-right:2rem;
+    
+    
+    
+}
+.article img{
+    width:100%;
+    height:40%;
+}
+.article .small-txt{
+    font-size:0.7rem;
+    color:hsl(233, 8%, 62%);
+
+}
+.article p{
+    color:hsl(233, 8%, 62%);
+
+}
+.article .info{
+    width:90%;
+    margin:auto;
+}
+.info h4{
+    font-weight:200;
+}
+.footer{
+    width:100%;
+    background-color:hsl(233, 26%, 24%);
+    
+}
+.container{
+    width:80%;
+    margin:auto;
+    position:relative;
+    padding: 2rem 0 0 0;
+    display:flex;
+    
+}
+.white-logo{
+    background-color:#fff;
+}
+.btn-footer{
+    position:absolute;
+    top:2rem;
+}
+.col1 ul{
+    margin:0;
+    padding:0;
+}
+.col1 ul li {
+    list-style-type: none;
+    display:inline-flex;
+    
+}
+.col2 a,
+.col3 a{
+    color:hsl(233, 8%, 62%);
+
+}
+.col1{
+    width:25%;
+}
+.col2,
+.col3{
+    display:flex;
+    flex-direction:column;
+    width:15%;
+
+}
+.col1 img{
+    margin-bottom:2.7rem;
+}
+.col2 a,
+.col3 a{
+    margin-bottom:1rem;
+}
+.col1 ul li:hover img{
+    color:hsl(136, 65%, 51%);
+}
+.btn:hover{
+    opacity:0.6;
+}
+@media only screen and (max-width:480px){
+    *{
+        overflow:hidden;
+    }
+    /*
+    header nav,
+    header button{
+        display:none;
+    }
+    /*
+    .burger-menu{
+        position:absolute;
+        right:4rem;
+        
+
+
+    }
+    .line{
+        width:35px;
+        height:3px;
+        background-color:#000;
+        
+        
+    }
+
+    .line:after{
+        content:"";
+        position:absolute;
+        width:100%;
+        height:3px;
+        background-color:#000;
+        top:6px;
+    }
+    .line:before{
+        content:"";
+        position:absolute;
+        width:100%;
+        height:3px;
+        background-color:#000;
+        bottom:6px;
+    }
+    
+    .white-box{
+        width:90%;
+        background-color:#fff;
+        margin:auto;
+        position:absolute;
+        height:40vh;
+        top:5rem;
+        right:3.5rem;
+        
+        display:none;
+        
+
+    }
+    .white-box ul{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+    }
+    .white-box a{
+        font-size:2rem;
+        padding:0.5rem;
+        color:#000;
+    }
+    /*
+    .showcase{
+        width:100%;
+        position: relative;
+        overflow-y:hidden;
+    }
+    
+    .showcase::before{
+        width:100%;
+        background-position:left center;
+        height:50%;
+        top:-2rem;
+        right:0;
+    
+    
+    }
+    .showcase::after{
+        left:0rem;
+        top:0rem;
+        right:0;
+        width:100%;
+        height:50%;
+        background-size:cover;
+        background-position:center bottom;
+        
+    }
+    .infor{
+        width:80%;
+        top:20vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        left:0.6rem;
+        text-align:center;
+        
+
+    }
+    .infor button{
+        margin:auto;
+        top:0;
+    }
+    .sections{
+        z-index:1;
+
+    }
+    
+    
+
+
+
+
+}
